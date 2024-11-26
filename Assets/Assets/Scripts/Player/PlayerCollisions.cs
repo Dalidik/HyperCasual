@@ -84,7 +84,7 @@ public class PlayerCollisions : MonoBehaviour
             _moneyCount = _moneyCount + _dollar;
             _moneyText.text = _moneyCount.ToString();
             other.GetComponent<Collider>().enabled = false;
-          //  ParticleManager.instance.PlayParticle(1, transform.position);
+            ParticleManager.instance.PlayParticle(1, transform.position);
              Destroy(other.gameObject); 
         }
 
@@ -101,7 +101,7 @@ public class PlayerCollisions : MonoBehaviour
         if (other.tag == "Finish")
         {
             GameEvents.instance.gameWon.SetValueAndForceNotify(true);
-           // _pathFollower.Speed = 0;
+            _pathFollower.speed = 0;
         }
     }
 

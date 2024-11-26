@@ -17,7 +17,7 @@ SpriteAtlas:
       textureCompression: 0
       filterMode: 1
       generateMipMaps: 0
-      readable: 0
+      readable: 1
       crunchedCompression: 0
       sRGB: 1
     platformSettings: []
@@ -32,21 +32,18 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 21300000, guid: 85da09d58078cf84394a94160e6091c3, type: 2}
-    - {fileID: 21300000, guid: 23a95b31a9004d9488854613ddb6b102, type: 2}
+    - {fileID: 21300000, guid: abff58a058290454882eaa58255c0dc7, type: 2}
+    - {fileID: 21300000, guid: d56dd03186d98a24eba0c769bbb45ebf, type: 2}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys:
-    - 23a95b31a9004d9488854613ddb6b102: 21300000
-    - 85da09d58078cf84394a94160e6091c3: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 23a95b31a9004d9488854613ddb6b102, type: 2}
-  - {fileID: 21300000, guid: 85da09d58078cf84394a94160e6091c3, type: 2}
+  - {fileID: 21300000, guid: abff58a058290454882eaa58255c0dc7, type: 2}
+  - {fileID: 21300000, guid: d56dd03186d98a24eba0c769bbb45ebf, type: 2}
   m_PackedSpriteNamesToIndex:
-  - Negative
-  - Plus
+  - Dollar_Green
+  - icons8-high-priority-48
   m_RenderDataMap: {}
   m_Tag: Images Run
   m_IsVariant: 0
