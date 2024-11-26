@@ -66,7 +66,6 @@ public class PlayerCollisions : MonoBehaviour
             _middle.SetActive(false);
             _playerAnim.SetBool("Rich", false);
             _playerAnim.SetBool("Middle", true);
-            ParticleManager.instance.PlayParticle(2, transform.position);
         }
         
         if (_slider.value <= 0)
@@ -84,7 +83,7 @@ public class PlayerCollisions : MonoBehaviour
             _moneyCount = _moneyCount + _dollar;
             _moneyText.text = _moneyCount.ToString();
             other.GetComponent<Collider>().enabled = false;
-            ParticleManager.instance.PlayParticle(1, transform.position);
+            ParticleManager.instance.PlayParticle(2, transform.position);
              Destroy(other.gameObject); 
         }
 
@@ -95,6 +94,7 @@ public class PlayerCollisions : MonoBehaviour
             _moneyCount = _moneyCount - _badChoice;
             _moneyText.text = _moneyCount.ToString();
             other.GetComponent<Collider>().enabled = false;
+            ParticleManager.instance.PlayParticle(1, transform.position);
             Destroy(other.gameObject); 
         }
 
