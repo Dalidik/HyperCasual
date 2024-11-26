@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4753111283518504464}
   - component: {fileID: 8528034367011451317}
   - component: {fileID: 5889966533833819519}
+  - component: {fileID: 1532124136601701553}
   m_Layer: 0
   m_Name: bottle
   m_TagString: Bottle
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5385637935908725930}
   m_LocalRotation: {x: 0, y: 0, z: 0.105188064, w: 0.99445236}
   m_LocalPosition: {x: -5.62, y: 16.98, z: -21.01}
-  m_LocalScale: {x: 1.3968394, y: 1.3968394, z: 1.3968394}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5427509136193114554}
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1532124136601701553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385637935908725930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19754204, y: 0.65789944, z: 0.19754204}
+  m_Center: {x: -0.00000006294374, y: 0.2759169, z: -0.00000079348683}
 --- !u!1001 &1947976041738961355
 PrefabInstance:
   m_ObjectHideFlags: 0
