@@ -15,7 +15,7 @@ public class PlayerCollisions : MonoBehaviour
     [SerializeField] private GameObject _middle;
     [SerializeField] private GameObject _rich;
     [SerializeField] private PathFollower _pathFollower;
-    [SerializeField] private int _dollar = 5;
+    [SerializeField] private int _dollar = 2;
     [SerializeField] private int _badChoice = 10;
     
     private Animator _playerAnim;
@@ -41,7 +41,7 @@ public class PlayerCollisions : MonoBehaviour
     {
         if (_slider.value < 0.500f)
         {
-            _sliderText.text = "Бедный";
+            _sliderText.text = "Poor";
             _poor.SetActive(true);
             _middle.SetActive(false);
             _rich.SetActive(false);
@@ -50,22 +50,24 @@ public class PlayerCollisions : MonoBehaviour
 
         if (_slider.value > 0.500f)
         {
-            _sliderText.text = "Состоятельный";
+            _sliderText.text = "Affluent";
             _poor.SetActive(false);
             _middle.SetActive(true);
             _rich.SetActive(false);
+            _playerAnim.SetTrigger("Swipe");
             _playerAnim.SetBool("Middle", true);
-            _playerAnim.SetBool("Poor", false);
+           // _playerAnim.SetBool("Poor", false);
         }
 
         if (_slider.value > 0.800f)
         {
-            _sliderText.text = "Богатый";
+            _sliderText.text = "Rich";
             _rich.SetActive(true);
             _poor.SetActive(false);
             _middle.SetActive(false);
-            _playerAnim.SetBool("Rich", false);
+            _playerAnim.SetTrigger("Swipe");
             _playerAnim.SetBool("Middle", true);
+           // _playerAnim.SetBool("Middle", true);
         }
         
         if (_slider.value <= 0)
